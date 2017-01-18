@@ -128,3 +128,4 @@ def oauth(source):
     db.session.add(user)
     db.session.commit()
     login_user(user)
+    return 'ok'
