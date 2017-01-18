@@ -129,3 +129,6 @@ def oauth(source):
     db.session.commit()
     login_user(user)
     return 'ok'
+
+# TODO
+# 提供Weixin，facebook，twitter支持
