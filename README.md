@@ -1,6 +1,6 @@
 # simple-oauth
 
-简单提供几个社交网站的OAuth2.0功能以及API调用，目前支持QQ，微信
+简单提供几个社交网站的OAuth2.0功能以及API调用，目前支持QQ，Weibo
 
 基本用法
 
@@ -79,7 +79,9 @@ qq_client.a.b.post({'foo': 1}, files={'pic': f})
 ```python
 
 from flask import Flask, abort, request
+from flask_login import login_user
 from oauth.api import QQClient, WeiboClient
+from yourmodels import User
 
 
 app = Flask(__name__)
@@ -105,7 +107,7 @@ ALLOW_SOURCE = {
     'weibo': weibo_client, 
 }
 
-@app.route(/oauth/<source>)
+@app.route('/oauth/<source>')
 def oauth(source):
     if source not in ALLOW_SOURCE:
         abort(404)
