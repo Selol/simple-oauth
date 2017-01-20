@@ -2,6 +2,11 @@
 
 简单提供几个社交网站的OAuth2.0功能以及API调用，目前支持QQ，Weibo, Weixin
 
+依赖request和when，请自行安装
+
+pip install requests
+pip install whenpy
+
 基本用法
 
 ```python
