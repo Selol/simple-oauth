@@ -4,8 +4,11 @@
 
 依赖request和when，请自行安装
 
+```shell
 pip install requests
+
 pip install whenpy
+```
 
 基本用法
 
