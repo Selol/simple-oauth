@@ -1,6 +1,6 @@
 # simple-oauth
 
-简单提供几个社交网站的OAuth2.0功能以及API调用，目前支持QQ，Weibo
+简单提供几个社交网站的OAuth2.0功能以及API调用，目前支持QQ，Weibo, Weixin
 
 基本用法
 
